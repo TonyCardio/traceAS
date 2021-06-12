@@ -11,7 +11,7 @@ IP_PATTERN = re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}')
 def get_parser():
     parser = ArgumentParser(description="Trace Autonomous Systems")
     parser.add_argument("target", type=str, help="Целевой хост")
-    parser.add_argument("-hops", default=52, type=int, help="Максимальное значение TTL")
+    parser.add_argument("-hops", default=30, type=int, help="Максимальное значение TTL")
     parser.add_argument("-timeout", default=5, type=int, help="Таймаут ответа в секундах")
     return parser
 
